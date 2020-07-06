@@ -1,0 +1,32 @@
+import React, { useContext } from "react";
+import { Store } from "./Store";
+import { IEpisodeProps } from "./interfaces";
+
+import { fetchDataAction, toggleFavAction } from "./Actions";
+
+const EpisodeList = React.lazy<any>(() => import("./EpisodesList"));
+
+export default function HomePage(): JSX.Element {
+  const { state, dispatch } = useContext(Store);
+
+  React.useEffect(() => {
+    state.episodes.length === 0 && fetchDataAction(dispatch);
+  });
+
+  const props: IEpisodeProps = {
+    episodes: state.episodes,
+    store: { state, dispatch },
+    toggleFavAction,
+    favourites: state.favourites,
+  };
+
+  return (
+    <div>
+      <React.Suspense fallback={<div>Loading</div>}>
+        <section className="episode-layout">
+          <EpisodeList {...props} />
+        </section>
+      </React.Suspense>
+    </div>
+  );
+}
