@@ -2,13 +2,13 @@
   <img src="./Tom&Jerry.png" width="750">
 </p>
 
-How to use it ?
+# How to use it ?
 
-# git clone https://github.com/Zowie0122/tom-jerry_episodes_collection.git
+#git clone https://github.com/Zowie0122/tom-jerry_episodes_collection.git
 
-# yarn
+#yarn
 
-# yarn start
+#yarn start
 
 # Knowledge
 
