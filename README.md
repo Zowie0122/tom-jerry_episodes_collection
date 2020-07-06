@@ -3,11 +3,14 @@
 </p>
 
 How to use it ?
-git clone https://github.com/Zowie0122/tom-jerry_episodes_collection.git
-yarn
-yarn start
 
-https://www.youtube.com/watch?v=7LIGIN6_R_s&list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI&index=13
+# git clone https://github.com/Zowie0122/tom-jerry_episodes_collection.git
+
+# yarn
+
+# yarn start
+
+# Knowledge
 
 npx create-react-app your-app-name
 yarn add typescript @types/node @types/react @types/react-dom
