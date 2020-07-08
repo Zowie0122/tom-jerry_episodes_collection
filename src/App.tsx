@@ -4,7 +4,6 @@ import { Link } from "@reach/router";
 
 export default function App(props: any): JSX.Element {
   const { state } = useContext(Store);
-
   return (
     <div>
       <header className="header">
