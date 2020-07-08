@@ -1,3 +1,11 @@
+# Set up
+
+npx create-react-app your-app-name
+yarn add typescript @types/node @types/react @types/react-dom
+App.js 👉 App.tsx
+index.js 👉 index.tsx
+yarn start
+
 # TypeScript Cheatsheet
 
 Browser could not read TS, compile it with commands : tsc your_file.ts

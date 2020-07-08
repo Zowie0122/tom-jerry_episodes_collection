@@ -9,11 +9,3 @@
 \$yarn
 
 \$yarn start
-
-# Set up
-
-npx create-react-app your-app-name
-yarn add typescript @types/node @types/react @types/react-dom
-App.js 👉 App.tsx
-index.js 👉 index.tsx
-yarn start
